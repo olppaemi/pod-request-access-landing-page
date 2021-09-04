@@ -1,2 +1,2 @@
-"use strict";var form=document.querySelector("form");form.addEventListener("submit",(function(e){e.preventDefault()}));
+"use strict";var form=document.querySelector("form"),email=document.querySelector(".email-input");form.addEventListener("submit",(function(e){e.preventDefault(),""!==email.value&&email.validity.valid?form.classList.remove("invalid"):form.classList.add("invalid")}));
 //# sourceMappingURL=script.js.map

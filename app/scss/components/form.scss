@@ -1,0 +1,41 @@
+@use '../util' as *;
+
+.form {
+  width: rem(427);
+  position: relative;
+
+  .email-input {
+    width: 100%;
+    height: rem(56);
+    padding: rem(14) rem(170) rem(14) rem(32);
+    background: var(--dark-blue-grey);
+    color: var(--white);
+    border: none;
+    outline: none;
+    border-radius: rem(28);
+
+    &::placeholder {
+      font-size: rem(14);
+      font-weight: 700;
+      color: var(--light-blue-grey);
+    }
+  }
+
+  .button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(rem(-5), rem(5));
+  }
+
+  &.invalid:after {
+    display: block;
+    content: "Oops! Please check your email";
+
+    font-size: rem(12);
+    font-weight: 700;
+    color: var(--red);
+    text-indent: rem(32);
+    margin-top: rem(8);
+  }
+}

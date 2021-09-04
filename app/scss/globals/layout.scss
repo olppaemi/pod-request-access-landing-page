@@ -10,3 +10,39 @@
 		transform: translate(0, 0);
 	}
 }
+
+.header {
+	padding-top: rem(102);
+	padding-bottom: rem(103);
+}
+
+.wrapper {
+	width: rem(723);
+	height: rem(509);
+	background: var(--mirage);
+	padding-top: rem(88);
+
+	.title {
+		margin-bottom: rem(24);
+	}
+
+	.text {
+		width: rem(445);
+		margin-bottom: rem(40);
+	}
+
+	.form {
+		margin-bottom: rem(64);
+
+		&.invalid {
+			margin-bottom: rem(28);
+		}
+	}
+
+	.companies {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: rem(536);
+	}
+}

@@ -1,3 +1,5 @@
+@use '../util' as *;
+
 html {
 	font-size: 100%;
 	box-sizing: border-box;
@@ -14,5 +16,7 @@ html {
 body {
 	font-family: "Chivo", sans-serif;
 	font-weight: 300;
-	background: var(--mirage);
+	min-height: 100vh;
+	background: bottom 10% right / rem(232) rem(104) no-repeat url(/assets/desktop/bg-pattern-dots.svg),
+		right / rem(888) rem(640) no-repeat url(/assets/desktop/image-host.jpg), var(--mirage);
 }

@@ -6,6 +6,10 @@
 	line-height: rem(62);
 	text-transform: uppercase;
 	color: var(--white);
+
+	@include breakpoint-down(large) {
+		font-size: rem(48);
+	}
 }
 
 body {
