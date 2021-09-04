@@ -1,0 +1,16 @@
+@use '../util' as *;
+
+.title {
+	font-size: rem(52);
+	font-weight: 300;
+	line-height: rem(62);
+	text-transform: uppercase;
+	color: var(--white);
+}
+
+body {
+	font-size: rem(18);
+	font-weight: 300;
+	line-height: rem(28);
+	color: var(--light-blue-grey);
+}

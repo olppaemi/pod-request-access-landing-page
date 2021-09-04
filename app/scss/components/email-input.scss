@@ -1,0 +1,15 @@
+@use '../util' as *;
+
+.email-input {
+  width: rem(250);
+  height: rem(56);
+  padding: rem(14) rem(32);
+  background: var(--dark-blue-grey);
+  color: var(--white);
+
+  &::placeholder {
+    font-size: rem(14);
+    font-weight: 700;
+    color: var(--light-blue-grey);
+  }
+}
