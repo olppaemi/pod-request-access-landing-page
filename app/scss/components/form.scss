@@ -4,6 +4,14 @@
   width: rem(427);
   position: relative;
 
+  @include breakpoint-down(small) {
+    width: 100%;
+
+    & > * + * {
+      margin-top: rem(16);
+    }
+  }
+
   .email-input {
     width: 100%;
     height: rem(56);
@@ -19,6 +27,11 @@
       font-weight: 700;
       color: var(--light-blue-grey);
     }
+
+    @include breakpoint-down(small) {
+      height: rem(46);
+      padding: rem(9) rem(32);
+    }
   }
 
   .button {
@@ -26,6 +39,13 @@
     top: 0;
     right: 0;
     transform: translate(rem(-5), rem(5));
+
+    @include breakpoint-down(small) {
+      position: initial;
+      transform: initial;
+      width: 100%;
+      height: rem(46);
+    }
   }
 
   &.invalid:after {

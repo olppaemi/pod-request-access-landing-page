@@ -19,4 +19,14 @@ body {
 	min-height: 100vh;
 	background: bottom 10% right / rem(232) rem(104) no-repeat url(/assets/desktop/bg-pattern-dots.svg),
 		right / rem(888) rem(640) no-repeat url(/assets/desktop/image-host.jpg), var(--mirage);
+
+	@include breakpoint-down(large) {
+		background: left 5% bottom / rem(232) rem(104) no-repeat url(/assets/desktop/bg-pattern-dots.svg),
+			top right / rem(491) rem(767) no-repeat url(/assets/tablet/image-host.jpg), var(--mirage);
+	}
+
+	@include breakpoint-down(small) {
+		background: center / cover no-repeat url(/assets/mobile/image-host.jpg), var(--mirage);
+		background-blend-mode: overlay;
+	}
 }
